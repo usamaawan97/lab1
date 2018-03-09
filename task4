@@ -1,0 +1,8 @@
+#!/bin/bash
+
+var=('cat file.txt')
+echo ${var[*]}
+echo ${#var[*]}
+echo ${var[3]}
+echo ${#var[3]}
+

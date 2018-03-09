@@ -1,0 +1,33 @@
+#!/bin/bash
+echo "num1:"
+read num1
+echo "num2:"
+read num2
+
+if [ $# -ne 1 ]
+then
+
+echo "Addition:"
+add=`expr $num1 + $num2`
+echo $add
+
+echo "Subtraction:"
+sub=`expr $num1 - $num2`
+echo $sub
+
+echo "Multiplication:"
+mul=`expr $num1 \* $num2`
+echo $mul
+
+echo "Division:"
+div=`expr $num1 / $num2`
+echo $div
+
+echo "Mod:"
+mod=`expr $num1 % $num2`
+echo $mod
+
+else 
+echo "Empty"
+
+fi

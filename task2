@@ -1,0 +1,28 @@
+#!/bin/bash
+
+UNIX=('Debian' 'Red hat' 'Ubuntu' 'Suse' 'Fedora')
+echo ${UNIX[*]}
+echo ${#UNIX[*]}
+echo ${#UNIX[1]}
+echo "${UNIX[2]} ${UNIX[3]}"
+UNIX=(${UNIX[*]} 'AIX' 'HP-UX')
+
+echo ${UNIX[*]}
+
+unset UNIX[3]
+
+echo ${UNIX[*]}
+
+LINUX=${UNIX[*]}
+echo ${UNIX[*]}
+
+BASH=(${UNIX[*]} ${UNIX[*]})
+
+echo ${BASH[*]}
+
+unset UNIX
+unset LINUX
+
+echo ${UNIX[*]}
+echo ${LINUX[*]}
+
